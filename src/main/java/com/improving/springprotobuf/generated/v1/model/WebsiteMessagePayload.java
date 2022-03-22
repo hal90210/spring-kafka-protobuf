@@ -76,18 +76,10 @@ public final class WebsiteMessagePayload {
         int index);
 
     /**
-     * <pre>
-     * We will publish records with this field and then remove it in v2
-     * </pre>
-     *
      * <code>optional string topic = 5;</code>
      */
     java.lang.String getTopic();
     /**
-     * <pre>
-     * We will publish records with this field and then remove it in v2
-     * </pre>
-     *
      * <code>optional string topic = 5;</code>
      */
     com.google.protobuf.ByteString
@@ -330,10 +322,6 @@ public final class WebsiteMessagePayload {
     public static final int TOPIC_FIELD_NUMBER = 5;
     private volatile java.lang.Object topic_;
     /**
-     * <pre>
-     * We will publish records with this field and then remove it in v2
-     * </pre>
-     *
      * <code>optional string topic = 5;</code>
      */
     public java.lang.String getTopic() {
@@ -349,10 +337,6 @@ public final class WebsiteMessagePayload {
       }
     }
     /**
-     * <pre>
-     * We will publish records with this field and then remove it in v2
-     * </pre>
-     *
      * <code>optional string topic = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -1258,10 +1242,6 @@ public final class WebsiteMessagePayload {
 
       private java.lang.Object topic_ = "";
       /**
-       * <pre>
-       * We will publish records with this field and then remove it in v2
-       * </pre>
-       *
        * <code>optional string topic = 5;</code>
        */
       public java.lang.String getTopic() {
@@ -1277,10 +1257,6 @@ public final class WebsiteMessagePayload {
         }
       }
       /**
-       * <pre>
-       * We will publish records with this field and then remove it in v2
-       * </pre>
-       *
        * <code>optional string topic = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -1297,10 +1273,6 @@ public final class WebsiteMessagePayload {
         }
       }
       /**
-       * <pre>
-       * We will publish records with this field and then remove it in v2
-       * </pre>
-       *
        * <code>optional string topic = 5;</code>
        */
       public Builder setTopic(
@@ -1314,10 +1286,6 @@ public final class WebsiteMessagePayload {
         return this;
       }
       /**
-       * <pre>
-       * We will publish records with this field and then remove it in v2
-       * </pre>
-       *
        * <code>optional string topic = 5;</code>
        */
       public Builder clearTopic() {
@@ -1327,10 +1295,6 @@ public final class WebsiteMessagePayload {
         return this;
       }
       /**
-       * <pre>
-       * We will publish records with this field and then remove it in v2
-       * </pre>
-       *
        * <code>optional string topic = 5;</code>
        */
       public Builder setTopicBytes(
