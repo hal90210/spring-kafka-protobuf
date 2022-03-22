@@ -82,10 +82,14 @@ V1 has a topic field on WebsiteMessage, which is removed in V2. V2 has a Version
 
 ## Alternative to running the App in docker ##
 
-You can start kafka any way you want, or run docker-compose up -d kafka
-Then gradle clean build bootRun
-Or use your IDE to debug th bootRun task.
 Make sure to change the active profile to local
+
+You can start kafka any way you want, with the conflunt binaries, or run 
+- `docker-compose up -d kafka`
+- `gradle clean build bootRun`
+
+You can also use your IDE to debug the bootRun task.
+
 
 
 
