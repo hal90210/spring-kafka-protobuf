@@ -1,0 +1,15 @@
+curl -X POST http://localhost:8080/v1/message/publish \
+   -H 'Content-Type: application/json' \
+   -d '{"content": "hey this is a v1 message",
+        "author": {
+         "firstName": "Scott", "lastName": "Strzynski"
+        }
+       }'
+
+curl -X POST http://localhost:8080/v2/message/publish \
+   -H 'Content-Type: application/json' \
+   -d '{"content": "Look at this is a v2 message",
+        "author": {
+         "firstName": "Scott", "lastName": "Strzynski"
+        }
+       }'

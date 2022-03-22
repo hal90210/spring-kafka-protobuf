@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.improving.springprotobuf.generated.v2.model";
+import "author.proto";
+
+message CommentMessage {
+  string id = 1;
+  string content = 2;
+  AuthorMessage author = 3;
+
+}

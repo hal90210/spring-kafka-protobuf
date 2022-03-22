@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_package = "com.improving.springprotobuf.generated.v2.model";
+option java_outer_classname = "WebsiteMessagePayload";
+
+import "google/protobuf/timestamp.proto";
+import "comment.proto";
+import "author.proto";
+
+message WebsiteMessage {
+  reserved 5;
+  reserved "topic";
+
+  string id = 1;
+  string content = 2;
+  AuthorMessage author = 3;
+  repeated CommentMessage comments = 4;
+
+  Version version = 6;
+}
+
+enum Version {
+  UNKNOWN = 0;
+  V1 = 1;
+  V2 = 2;
+}

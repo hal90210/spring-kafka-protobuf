@@ -1,0 +1,42 @@
+spring:
+  profiles.active: container
+  kafka:
+    bootstrap-servers: kafka:29092
+    consumer:
+      group-id: "message-group"
+      value-deserializer: io.confluent.kafka.serializers.protobuf.KafkaProtobufDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.protobuf.KafkaProtobufSerializer
+      client-id: "spring-boot-producer"
+
+---
+spring:
+  profiles: container
+  kafka:
+    bootstrap-servers: kafka:29092
+    consumer:
+      properties:
+        schema.registry.url: "http://schema_registry:8081"
+
+    producer:
+      properties:
+        schema.registry.url: "http://schema_registry:8081"
+    admin:
+      properties:
+        bootstrap.servers: kafka:29092
+
+---
+spring:
+  profiles: local
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      properties:
+        schema.registry.url: "localhost:8081"
+
+    producer:
+      properties:
+        schema.registry.url: "localhost:8081"

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.improving.springprotobuf.generated.v2.model";
+
+message AuthorMessage {
+  string id = 1;
+  string firstName = 2;
+  string lastName = 3;
+}
